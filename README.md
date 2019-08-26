@@ -1,6 +1,7 @@
 Dockerising bioinformatic tools
 ===============================
 
-| Tool      | Description                                                      | Image Size |
-|-----------|------------------------------------------------------------------|------------|
-| Circos    | Visualise data in a [circular layout](http://circos.ca/)         | x          |
+| Tool                                         | Description                                 |
+|----------------------------------------------|---------------------------------------------|
+| [circos](http://circos.ca/)                  | Visualise data in a circular layout         |
+| [bamstats](http://bamstats.sourceforge.net/) | Summarise BAM files                         |
