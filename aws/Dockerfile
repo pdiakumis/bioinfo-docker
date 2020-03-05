@@ -1,10 +1,9 @@
-FROM python:alpine
+FROM frolvlad/alpine-miniconda3:python3.7
 
 ARG CLI_VERSION=1.18.14
 
-RUN apk -uv add --no-cache groff jq less && \
-    pip install --no-cache-dir awscli==$CLI_VERSION
+RUN apk add --no-cache bash
+RUN conda install -c conda-forge awscli==$CLI_VERSION
 
 WORKDIR /aws
 
-CMD sh
